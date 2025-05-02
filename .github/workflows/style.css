@@ -1,0 +1,76 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+  transition: all 0.3s ease-in-out;
+}
+
+:root {
+  --bg: #ffffff;
+  --text: #222;
+  --accent: #4a90e2;
+  --card: #f4f4f4;
+}
+
+.dark-mode {
+  --bg: #1e1e1e;
+  --text: #f4f4f4;
+  --card: #2e2e2e;
+}
+
+.container {
+  padding: 20px;
+  max-width: 700px;
+  margin: auto;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.task-input {
+  display: flex;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+input,
+select,
+button {
+  padding: 10px;
+  font-size: 16px;
+}
+
+#taskList {
+  list-style: none;
+  padding: 0;
+}
+
+.task {
+  display: flex;
+  justify-content: space-between;
+  background: var(--card);
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  cursor: grab;
+}
+
+.task span {
+  flex: 1;
+}
+
+.task.completed span {
+  text-decoration: line-through;
+  color: gray;
+}
+
+canvas {
+  margin-top: 30px;
+  background: var(--card);
+  border-radius: 8px;
+  padding: 20px;
+}

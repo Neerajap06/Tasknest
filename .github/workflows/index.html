@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TaskNest – Productivity Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>📝 TaskNest</h1>
+        <button id="toggleMode">🌙</button>
+      </header>
+
+      <section class="task-input">
+        <input type="text" id="taskInput" placeholder="Add new task..." />
+        <select id="categorySelect">
+          <option value="Work">Work</option>
+          <option value="Personal">Personal</option>
+          <option value="Urgent">Urgent</option>
+        </select>
+        <button onclick="addTask()">Add</button>
+      </section>
+
+      <ul id="taskList"></ul>
+
+      <canvas id="progressChart"></canvas>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
